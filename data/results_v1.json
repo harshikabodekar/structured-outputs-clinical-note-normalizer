@@ -1,0 +1,318 @@
+[
+  {
+    "type": "clear",
+    "note": "Resident complained of mild headache since morning. BP 128/82. Took lisinopril 10mg at 8am.",
+    "output": {
+      "symptoms": "mild headache since morning",
+      "symptoms_confidence": 0.99,
+      "bp_reading": "128/82",
+      "bp_confidence": 0.99,
+      "medication": "lisinopril 10mg",
+      "medication_confidence": 0.99,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "clear",
+    "note": "Patient reports nausea after breakfast. BP measured at 118/76. Metformin taken with meal.",
+    "output": {
+      "symptoms": "nausea after breakfast",
+      "symptoms_confidence": 1.0,
+      "bp_reading": "118/76",
+      "bp_confidence": 1.0,
+      "medication": "Metformin",
+      "medication_confidence": 1.0,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "clear",
+    "note": "Dizziness when standing up, lasted 2 minutes. BP 135/88. Took amlodipine 5mg this morning.",
+    "output": {
+      "symptoms": "Dizziness when standing up, lasted 2 minutes.",
+      "symptoms_confidence": 0.99,
+      "bp_reading": "135/88",
+      "bp_confidence": 0.99,
+      "medication": "amlodipine 5mg",
+      "medication_confidence": 0.99,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "clear",
+    "note": "Patient had chest tightness at 3pm, resolved with rest. BP 142/90. Took aspirin 75mg.",
+    "output": {
+      "symptoms": "chest tightness at 3pm, resolved with rest",
+      "symptoms_confidence": 0.95,
+      "bp_reading": "142/90",
+      "bp_confidence": 0.95,
+      "medication": "aspirin 75mg",
+      "medication_confidence": 0.95,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "clear",
+    "note": "Complains of joint pain in knees. BP 122/80. Paracetamol 500mg given at noon.",
+    "output": {
+      "symptoms": "joint pain in knees",
+      "symptoms_confidence": 0.95,
+      "bp_reading": "122/80",
+      "bp_confidence": 0.95,
+      "medication": "Paracetamol 500mg",
+      "medication_confidence": 0.95,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "missing",
+    "note": "Patient felt tired all day. No BP taken. Medication not recorded.",
+    "output": {
+      "symptoms": "tired all day",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.1,
+      "medication": "unknown",
+      "medication_confidence": 0.1,
+      "clarifications_needed": [
+        "What was the patient's blood pressure reading?",
+        "Which medications were administered or missed today?"
+      ]
+    }
+  },
+  {
+    "type": "missing",
+    "note": "Resident had a headache this evening. Took something for it.",
+    "output": {
+      "symptoms": "headache",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.0,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "What was the blood pressure reading?",
+        "What specific medication was taken for the headache?"
+      ]
+    }
+  },
+  {
+    "type": "missing",
+    "note": "Patient dizzy after walking. BP not checked.",
+    "output": {
+      "symptoms": "dizzy after walking",
+      "symptoms_confidence": 0.95,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.1,
+      "medication": "unknown",
+      "medication_confidence": 0.1,
+      "clarifications_needed": [
+        "What is the patient's current blood pressure reading?",
+        "Is the patient currently taking any medications?"
+      ]
+    }
+  },
+  {
+    "type": "missing",
+    "note": "Patient refused lunch, seemed low energy. Nothing else noted.",
+    "output": {
+      "symptoms": "refused lunch, low energy",
+      "symptoms_confidence": 0.95,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.0,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "What is the patient's blood pressure reading?",
+        "What medications, if any, has the patient taken?"
+      ]
+    }
+  },
+  {
+    "type": "missing",
+    "note": "Cough since last night, no fever mentioned. BP and meds not noted.",
+    "output": {
+      "symptoms": "Cough since last night, no fever mentioned",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.0,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "What is the patient's blood pressure reading?",
+        "What medications is the patient currently taking?"
+      ]
+    }
+  },
+  {
+    "type": "conflicting",
+    "note": "Patient reports dizziness. BP 130/85 first reading, 160/100 on recheck. Took amlodipine.",
+    "output": {
+      "symptoms": "dizziness",
+      "symptoms_confidence": 1.0,
+      "bp_reading": "130/85 (first reading), 160/100 (recheck)",
+      "bp_confidence": 1.0,
+      "medication": "amlodipine",
+      "medication_confidence": 1.0,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "conflicting",
+    "note": "Daughter says mother took her tablets, patient says she did not. Mild headache.",
+    "output": {
+      "symptoms": "Mild headache",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.0,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "Did the patient actually take her medication today?",
+        "What is the patient's current blood pressure reading?"
+      ]
+    }
+  },
+  {
+    "type": "conflicting",
+    "note": "BP written as 120/80 in the log but nurse says it felt higher. Patient has blurry vision.",
+    "output": {
+      "symptoms": "blurry vision",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "120/80",
+      "bp_confidence": 0.5,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "What medication is the patient currently taking?",
+        "What was the actual blood pressure reading if the nurse felt it was higher than 120/80?"
+      ]
+    }
+  },
+  {
+    "type": "conflicting",
+    "note": "Patient says headache started yesterday, caregiver says it began today. BP 138/90.",
+    "output": {
+      "symptoms": "headache",
+      "symptoms_confidence": 0.5,
+      "bp_reading": "138/90",
+      "bp_confidence": 1.0,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "When did the headache actually begin, yesterday or today?",
+        "What medication, if any, is the patient currently taking?"
+      ]
+    }
+  },
+  {
+    "type": "conflicting",
+    "note": "Took metformin in morning per patient, but pill box still full. Complains of weakness.",
+    "output": {
+      "symptoms": "weakness",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "unknown",
+      "bp_confidence": 0.0,
+      "medication": "metformin",
+      "medication_confidence": 0.8,
+      "clarifications_needed": [
+        "What is the patient's blood pressure reading?",
+        "Did the patient actually take the metformin given that the pill box is still full?"
+      ]
+    }
+  },
+  {
+    "type": "vague",
+    "note": "pt dizzy after lunch, bp maybe high?? took meds, not sure which",
+    "output": {
+      "symptoms": "dizzy after lunch",
+      "symptoms_confidence": 0.8,
+      "bp_reading": "maybe high",
+      "bp_confidence": 0.2,
+      "medication": "unknown",
+      "medication_confidence": 0.0,
+      "clarifications_needed": [
+        "What was the exact blood pressure reading?",
+        "Which medication was taken?"
+      ]
+    }
+  },
+  {
+    "type": "vague",
+    "note": "feeling off since morning, bp 14/9 ish, took the usual white pill",
+    "output": {
+      "symptoms": "feeling off since morning",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "14/9",
+      "bp_confidence": 0.8,
+      "medication": "usual white pill",
+      "medication_confidence": 0.4,
+      "clarifications_needed": [
+        "What is the exact name and dosage of the 'usual white pill'?",
+        "Could you clarify the blood pressure reading, as 14/9 is unusual (did you mean 140/90)?"
+      ]
+    }
+  },
+  {
+    "type": "vague",
+    "note": "head hurting bad, BP high-ish, took 2 tabs of the BP one i think",
+    "output": {
+      "symptoms": "head hurting bad",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "high-ish",
+      "bp_confidence": 0.4,
+      "medication": "2 tabs of the BP one",
+      "medication_confidence": 0.5,
+      "clarifications_needed": [
+        "What is the exact numerical blood pressure reading?",
+        "What is the specific name of the medication taken?"
+      ]
+    }
+  },
+  {
+    "type": "vague",
+    "note": "pt c/o dizzy, bp 150/9? (smudged), meds as per chart",
+    "output": {
+      "symptoms": "dizzy",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "150/9?",
+      "bp_confidence": 0.3,
+      "medication": "as per chart",
+      "medication_confidence": 0.4,
+      "clarifications_needed": [
+        "What is the exact diastolic blood pressure reading, as it was smudged?",
+        "Which specific medications were taken according to the chart?"
+      ]
+    }
+  },
+  {
+    "type": "vague",
+    "note": "shaky and sweaty before dinner, BP around 110 over 70, had her sugar tablet",
+    "output": {
+      "symptoms": "shaky and sweaty",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "110/70",
+      "bp_confidence": 0.9,
+      "medication": "sugar tablet",
+      "medication_confidence": 0.8,
+      "clarifications_needed": []
+    }
+  },
+  {
+    "type": "vague",
+    "note": "Patient says she feels weird and not herself. Took morning medicines. BP normal.",
+    "output": {
+      "symptoms": "feels weird and not herself",
+      "symptoms_confidence": 0.9,
+      "bp_reading": "normal",
+      "bp_confidence": 0.5,
+      "medication": "morning medicines",
+      "medication_confidence": 0.6,
+      "clarifications_needed": [
+        "What is the exact numerical blood pressure reading?",
+        "Which specific morning medicines were taken?",
+        "Can the patient describe what 'feels weird and not herself' means in more detail?"
+      ]
+    }
+  }
+]
